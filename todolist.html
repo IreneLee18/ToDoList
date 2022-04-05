@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="todolist.css">
+</head>
+<body>
+  <div class="container">
+    <h1>TODO LIST</h1>
+    <div class="card input">
+      <input type="text" class="toDoListContent" placeholder="請輸入待辦事項" />
+      <a href="#" class="btn_add">+</a>
+    </div>
+    <div class="card card_list">
+      <ul class="tab">
+        <li data-status="all" class="active" id="allStatus">全部</li>
+        <li data-status="work">待完成</li>
+        <li data-status="done">已完成</li>
+      </ul>
+      <div class="cart_content">
+        <ul class="list" id="list">
+          <!-- <li>
+            <label class="checkbox" for="">
+              <input type="checkbox" />
+              <span>把冰箱發霉的檸檬拿去丟</span>
+            </label>
+            <input type="button" value="×" class="delete">
+          </li> -->
+        </ul>
+        <div class="list_footer">
+          <p></p>
+          <a href="#" class="clear">清除已完成項目</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src="todolist.js"></script>
+</body>
+</html>
